@@ -26,6 +26,9 @@ class MainVC: UIViewController, DataServiceDelegate {
         collectionView.dataSource = self
         
         headerView.addDropShadow()
+        
+        let nib = UINib(nibName: "TacoCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
     }
     
     func deliciousTacoDataLoaded() {
