@@ -27,8 +27,10 @@ class MainVC: UIViewController, DataServiceDelegate {
         
         headerView.addDropShadow()
         
-        let nib = UINib(nibName: "TacoCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+        // The old way to add a nib
+        //  let nib = UINib(nibName: "TacoCell", bundle: nil)
+        //  collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+        collectionView.register(TacoCell.self)
     }
     
     func deliciousTacoDataLoaded() {
@@ -48,10 +50,15 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // The old way of doing it without Generics
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
             cell.configureCell(taco: ds.tacoArray[indexPath.row])
             return cell
         }
+        
+        // This would be the new way to do it, but for some reason xCode is not recognizing this function as created
+        //let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        //cell.configureCell(taco: ds.tacoArray[indexPath.row])
         
         return UICollectionViewCell()
     }
