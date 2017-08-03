@@ -16,6 +16,7 @@
 		F27FF0201F33B31700EA3B5D /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27FF01F1F33B31700EA3B5D /* UICollectionView+Ext.swift */; };
 		F295856C1F2A9AC4008FDE5C /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295856B1F2A9AC4008FDE5C /* DropShadow.swift */; };
 		F295856E1F2A9B8F008FDE5C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295856D1F2A9B8F008FDE5C /* HeaderView.swift */; };
+		F2CA017A1F33D20B00068DF4 /* MutableCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA01791F33D20B00068DF4 /* MutableCollection+Ext.swift */; };
 		F2F956A41F2A963500196D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F956A31F2A963500196D0A /* AppDelegate.swift */; };
 		F2F956A91F2A963500196D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F956A71F2A963500196D0A /* Main.storyboard */; };
 		F2F956AB1F2A963500196D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F956AA1F2A963500196D0A /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		F27FF01F1F33B31700EA3B5D /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		F295856B1F2A9AC4008FDE5C /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		F295856D1F2A9B8F008FDE5C /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F2CA01791F33D20B00068DF4 /* MutableCollection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Ext.swift"; sourceTree = "<group>"; };
 		F2F956A01F2A963500196D0A /* TacoPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F956A31F2A963500196D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F956A81F2A963500196D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F27FF01F1F33B31700EA3B5D /* UICollectionView+Ext.swift */,
+				F2CA01791F33D20B00068DF4 /* MutableCollection+Ext.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F27FF0191F33AB4200EA3B5D /* TacoCell.swift in Sources */,
+				F2CA017A1F33D20B00068DF4 /* MutableCollection+Ext.swift in Sources */,
 				F2F956A41F2A963500196D0A /* AppDelegate.swift in Sources */,
 				F295856C1F2A9AC4008FDE5C /* DropShadow.swift in Sources */,
 				F27FF01E1F33B29800EA3B5D /* NibLoadableView.swift in Sources */,
