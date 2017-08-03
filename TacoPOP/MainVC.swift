@@ -58,14 +58,16 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         }
         
         // This would be the new way to do it, but for some reason xCode is not recognizing this function as created
-        //let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        // let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
         //cell.configureCell(taco: ds.tacoArray[indexPath.row])
         
         return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell {
+            cell.shake()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
